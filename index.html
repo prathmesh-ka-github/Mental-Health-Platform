@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="stylesheet" href="/src/index.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,800;1,300;1,700;1,900&display=swap');
+  </style>
+  <title>Mental Health</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script type="module" src="src/index.js"></script>
+</body>
+<script>
+  function theme() {
+    //overall theme
+    document.body.classList.toggle("dark-theme")
+    if (document.body.classList.contains("dark-theme")) {
+      icon.src="./assets/icons8-moon-100.png"
+      logo.src="./assets/icons8-mental-health-64.png"
+      menu.src="./assets/menu-dark.png"
+      console.log("Dark theme applied!");
+    }
+    else
+    {
+      icon.src="./assets/icons8-sun-100.png"
+      logo.src="./assets/icons8-mental-health-64 (1).png"
+      menu.src="./assets/menu-light.png"
+      console.log("Light theme applied!");
+    }
+
+  }
+
+</script>
+</html>

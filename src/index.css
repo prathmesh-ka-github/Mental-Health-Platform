@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+/*------------------------------------------------------------CSS VARIABLES FOR DARK MODE-------------------------------------------------------*/
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #000000;
+  --ternary-color-1: #a4a3a3;
+  --ternary-color-2: #747474;
+  --main-color: #4D77FF;
+
+  --opacity-primary: 1;
+  --opacity-secondary: 1;
+  
+  --back-brightness: brightness(1);
+  --back-blur: blur(64px);
+}
+
+.opa-dark {
+  opacity: var(--opacity-primary);
+}
+
+.opa-light {
+  opacity: var(--opacity-secondary);
+}
+
+.txt-main {
+  color: var(--main-color);
+}
+
+.back-main {
+  background-color: var(--main-color);
+}
+
+.back-dark {
+  background-color: var(--secondary-color);
+}
+
+.txt-dark {
+  color: var(--primary-color);
+}
+
+.back-light {
+  background-color: var(--primary-color);
+}
+
+.txt-light {
+  color: var(--secondary-color);
+  fill: var(--secondary-color);
+}
+
+.txt-ternary-dark {
+  color: var(--ternary-color-1);
+}
+
+.txt-ternary-light {
+  color: var(--ternary-color-2);
+}
+
+.nav-dark {
+  backdrop-filter: var(--back-blur) 
+  var(--back-brightness);
+}
+.nav-light {
+  backdrop-filter: var(--back-blur)
+  var(--back-brightness);
+}
+/*-----------------------------------------------------DARK THEME--------------------------------------------------*/
+.dark-theme {
+  --secondary-color: #ffffff;
+  --primary-color: #070707;
+  --ternary-color-2: #a4a3a3;
+  --ternary-color-1: #747474;
+  --main-color: #4D77FF;
+  --opacity-secondary: 0.3;
+  --opacity-primary: 0.5;
+
+  --back-brightness: brightness(0.4);
+  --back-blur: blur(64px);
+}
+
+/*-----------------------------------------------gradients for the backdrop---------------------------------------------------*/
+.gradient__blue {
+  background: linear-gradient(45deg, #b9c9ff 0%, #4964ff 100%);
+  filter: blur(120px);
+}
+
+.gradient__blue2 {
+  background: linear-gradient(45deg, #b9c9ff 0%, #4964ff 100%);
+  filter: blur(120px);
+}
+
+.gradient__pink {
+  background: linear-gradient(10deg, #ffb9f6 0%, #fd74eb 100%);
+  filter: blur(140px);
+}
+
+/*------------------------------------------------PULSING EFFECTS-------------------------------------------------------------*/
+.gradient__blue {
+  animation: pulse 12s 10s ease infinite;
+}
+
+.gradient__blue2 {
+  animation: pulse 8s 10s ease infinite;
+}
+
+.gradient__pink {
+  animation: pulse 20s ease infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/*---------------------------------------------------TYPEWRITER EFFECT-------------------------------------------------------*/
+.type {
+  position: relative;
+
+}
+
+.type::before,
+.type::after {
+
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.type::before {
+  background: var(--primary-color);
+  animation: typerwriter 2s steps(14) 1s forwards;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.type::after {
+  width: 0.125em;
+  background: var(--main-color);
+  animation: typerwriter 2s steps(14) 1s forwards,
+    blink 700ms steps(14) infinite;
+}
+
+@keyframes typerwriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+/*----------------------------------------------------------CUSTOM SCROLLBAR-----V--------------------------------------------------------*/
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: var(--primary-color);
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--main-color);
+}
+
+/*----------------------------------------SCROLL SNAP EFFECT (God bless me if I pulled this off)-----------------------------------------*/
