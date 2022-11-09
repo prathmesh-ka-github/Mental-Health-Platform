@@ -17,7 +17,6 @@ function App() {
       <How/>
       <Faq/>
       <Solutions/>
-      <Info/>
       <BackGradients/>
       <div id="test-space" className="h-[5000px]"></div>
     </div>
