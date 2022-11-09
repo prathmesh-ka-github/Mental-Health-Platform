@@ -210,16 +210,16 @@ body {
 .content {
   color: var(--secondary-color);
   max-height: 0;
-  top: 200px;
   overflow: hidden;
-  transition: height 0.5s cubic-bezier(0,1,0,1);
+  transition: max-height 2s cubic-bezier(0,1,0,1);
   padding: 0px;
+  font-size:0px;
 }
 .content.show {
   padding: 20px;
   height: auto;
   max-height: 99999px;
-  transition: height 0.5s cubic-bezier(1,0,1,0);
+  transition: max-height 2s cubic-bezier(1,0,1,0);
   font-size: 25px;
 }
 #blueborder {

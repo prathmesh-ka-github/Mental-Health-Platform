@@ -21,7 +21,7 @@ const Faq = () => {
       <div className='flex justify-center mt-10 h-[60%] w-[90vw]'>   
         <div className='lg:w-[70vw] mobile:w-[100vw]'>   
             <div className='mobile:px-4 lg:px-8 '>     
-                <div id='blueborder'className='flex w-[100%] justify-between txt-light mobile:text-[25px] lg:text-[50px] mobile:p-2 lg:p-6 cursor-pointer'>  
+                <div id='blueborder'className='flex w-[100%] justify-between txt-light mobile:text-[25px] lg:text-[30px] mobile:p-2 lg:p-6 cursor-pointer'>  
                   <h1>Question 1</h1>
                   <span>-</span>
                 </div>
@@ -29,7 +29,7 @@ const Faq = () => {
             </div>
           {data.map((item, i) => (
               <div className='mobile:px-4 lg:px-8 '>     
-                <div id='blueborder' onClick={() => toggle(i)} className='flex w-[100%] justify-between txt-light mobile:text-[25px] lg:text-[50px] mobile:p-2 lg:p-6 cursor-pointer'>  
+                <div id='blueborder' onClick={() => toggle(i)} className='flex w-[100%] justify-between txt-light mobile:text-[25px] lg:text-[30px] mobile:p-2 lg:p-6 cursor-pointer'>  
                   <h1>{item.question}</h1>
                   <span>{selected === i ? '-' : '+'}</span>
                 </div>
