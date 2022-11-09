@@ -201,3 +201,33 @@ body {
 }
 
 /*----------------------------------------SCROLL SNAP EFFECT (God bless me if I pulled this off)-----------------------------------------*/
+
+/*-----------------------------------------------------------ACCORDION-----------------------------------------------------------------*/
+
+.transition {
+  transition: all 0.5s cubic-bezier(0,1,0,1);
+}
+.content {
+  color: var(--secondary-color);
+  max-height: 0;
+  top: 200px;
+  overflow: hidden;
+  transition: height 0.5s cubic-bezier(0,1,0,1);
+  padding: 0px;
+}
+.content.show {
+  padding: 20px;
+  height: auto;
+  max-height: 99999px;
+  transition: height 0.5s cubic-bezier(1,0,1,0);
+  font-size: 25px;
+}
+#blueborder {
+  border: 1px solid #4D77FF;
+  border-bottom: 0px;
+  border-radius: 10px 10px 0px 0px;
+}
+#blueborder2 {
+  border: 1px solid #4D77FF;
+  border-bottom: 0px;
+}

@@ -10,7 +10,7 @@ import Top from './components/Top';
 
 function App() {
   return (
-    <div className='-z-10 back-light transition-all'>
+    <div className='-z-30 back-light transition-all'>
       <Top/>
       <NavBar/>
       <Home/>
