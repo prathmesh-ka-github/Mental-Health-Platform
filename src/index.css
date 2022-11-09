@@ -211,7 +211,7 @@ body {
   color: var(--secondary-color);
   max-height: 0;
   overflow: hidden;
-  transition: max-height 2s cubic-bezier(0,1,0,1);
+  transition: all 0.5s cubic-bezier(0,0,0,1);
   padding: 0px;
   font-size:0px;
 }
@@ -219,7 +219,7 @@ body {
   padding: 20px;
   height: auto;
   max-height: 99999px;
-  transition: max-height 2s cubic-bezier(1,0,1,0);
+  transition: all 0.5s cubic-bezier(1,0,0,0);
   font-size: 25px;
 }
 #blueborder {

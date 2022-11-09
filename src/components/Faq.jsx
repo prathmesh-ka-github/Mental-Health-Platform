@@ -18,18 +18,23 @@ const Faq = () => {
           Frequently Asked
           <span className="txt-light">&nbsp;Questions</span>
       </div>
-      <div className='flex justify-center mt-10 h-[60%] w-[90vw]'>   
+      <div className='flex justify-center mt-20 h-[60%] w-[90vw]'>   
         <div className='lg:w-[70vw] mobile:w-[100vw]'>   
+
             <div className='mobile:px-4 lg:px-8 '>     
-                <div id='blueborder'className='flex w-[100%] justify-between txt-light mobile:text-[25px] lg:text-[30px] mobile:p-2 lg:p-6 cursor-pointer'>  
-                  <h1>Question 1</h1>
-                  <span>-</span>
-                </div>
-                <div id='blueborder2' className='content show'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deserunt nostrum facilis asperiores dignissimos nobis adipisci quasi quas, numquam, reiciendis quod aut. Repellendus esse tempora dolorem velit, obcaecati dicta deserunt?</div>
+              <div id='blueborder'
+                className='flex w-[100%] justify-between txt-light mobile:text-[25px] lg:text-[30px] mobile:p-2 lg:p-6 cursor-pointer'>  
+                <h1>Question 1</h1>
+                <span>-</span>
+              </div>
+              <div id='blueborder2' className='content show'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deserunt nostrum facilis asperiores dignissimos nobis adipisci quasi quas, numquam, reiciendis quod aut. Repellendus esse tempora dolorem velit, obcaecati dicta deserunt?</div>
             </div>
+
+
           {data.map((item, i) => (
               <div className='mobile:px-4 lg:px-8 '>     
-                <div id='blueborder' onClick={() => toggle(i)} className='flex w-[100%] justify-between txt-light mobile:text-[25px] lg:text-[30px] mobile:p-2 lg:p-6 cursor-pointer'>  
+                <div id='blueborder' onClick={() => toggle(i)} 
+                className='flex w-[100%] justify-between txt-light mobile:text-[25px] lg:text-[30px] mobile:p-2 lg:p-6 cursor-pointer'>  
                   <h1>{item.question}</h1>
                   <span>{selected === i ? '-' : '+'}</span>
                 </div>
