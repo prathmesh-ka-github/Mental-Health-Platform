@@ -24,10 +24,12 @@ const Faq = () => {
             <div className='mobile:px-4 lg:px-8 '>     
               <div id='blueborder'
                 className='flex w-[100%] justify-between txt-light mobile:text-[25px] lg:text-[30px] mobile:p-2 lg:p-6 cursor-pointer'>  
-                <h1>Question 1</h1>
+                <h1>Q. What about my confidentiality?</h1>
                 <span>-</span>
               </div>
-              <div id='blueborder2' className='content show'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deserunt nostrum facilis asperiores dignissimos nobis adipisci quasi quas, numquam, reiciendis quod aut. Repellendus esse tempora dolorem velit, obcaecati dicta deserunt?</div>
+              <div id='blueborder2' className='content show'>
+                
+              </div>
             </div>
 
             {//Accordian here -------------------------------
@@ -36,11 +38,10 @@ const Faq = () => {
               <div className='mobile:px-4 lg:px-8 '>     
                 <div id='blueborder' onClick={() => toggle(i)} 
                 className='flex w-[100%] justify-between txt-light mobile:text-[25px] lg:text-[30px] mobile:p-2 lg:p-6 cursor-pointer'>  
-                  <h1>{item.question}</h1>
+                  <h1 className='z-10'>{item.question}</h1>
                   <span>{selected === i ? '-' : '+'}</span>
                 </div>
                 <div id='blueborder2' className={selected === i ? 'content show' : 'content'}>{item.answer}</div>
-
               </div>
           ))}
 
@@ -52,16 +53,16 @@ const Faq = () => {
 
 const data = [
   {
-    question : 'Question 2',
-    answer : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deserunt nostrum facilis asperiores dignissimos nobis adipisci quasi quas, numquam, reiciendis quod aut. Repellendus esse tempora dolorem velit, obcaecati dicta deserunt?',
+    question : 'Q. What causes mental health problems?',
+    answer : 'Scientists are still studying how people become mentally ill, so we do not know as much as we would like about how a person develops a mental disorder. There may be genetic causes or inherited vulnerabilities, prenatal care injuries or difficulties, exposure to toxins, or other unknown sources. Poverty, homelessness, overcrowding, stressful living conditions, frequent exposure to violence, abusive parents or severe marital or relationship problems can contribute to the development of a mental illness. There are various types of mental disorders and each one has its causes. click here to know more',
   },
   {
-    question : 'Question 3',
-    answer : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deserunt nostrum facilis asperiores dignissimos nobis adipisci quasi quas, numquam, reiciendis quod aut. Repellendus esse tempora dolorem velit, obcaecati dicta deserunt? ',
+    question : 'Q. Are there cures for mental health problems?',
+    answer : 'It is often more realistic and helpful to find out what helps with the issues you face. Talking, counselling, medication, friendships, exercise, good sleep and nutrition, and meaningful occupation can all help. ',
   },
   {
-    question : 'Question 4',
-    answer : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deserunt nostrum facilis asperiores dignissimos nobis adipisci quasi quas, numquam, reiciendis quod aut. Repellendus esse tempora dolorem velit, obcaecati dicta deserunt?'
+    question : "Q. How do I know if I'm unwell?",
+    answer : 'If your beliefs , thoughts , feelings or behaviours have a significant impact on your ability to function in what might be considered a normal or ordinary way, it would be important to seek help. You can take our free mental health test survey and find out. click here!'
   }
 ]
 
