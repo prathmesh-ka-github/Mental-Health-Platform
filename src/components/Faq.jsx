@@ -30,7 +30,8 @@ const Faq = () => {
               <div id='blueborder2' className='content show'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deserunt nostrum facilis asperiores dignissimos nobis adipisci quasi quas, numquam, reiciendis quod aut. Repellendus esse tempora dolorem velit, obcaecati dicta deserunt?</div>
             </div>
 
-
+            {//Accordian here -------------------------------
+            }
           {data.map((item, i) => (
               <div className='mobile:px-4 lg:px-8 '>     
                 <div id='blueborder' onClick={() => toggle(i)} 
