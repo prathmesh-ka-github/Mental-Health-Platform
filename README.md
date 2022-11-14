@@ -1,4 +1,4 @@
-# Mental health platform (currently in development)
+# Mental health platform (This app is currently in the rudimentary stage of development).
 <br>
 Now this project uses vite to build, run and develop this webapp!
 <br><br>
