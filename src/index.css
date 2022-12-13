@@ -233,3 +233,43 @@ body {
   border: 1px solid #4D77FF;
   border-bottom: 0px;
 }
+
+/* ------------------------------------------------------Loaderr-------------------------------------- */
+.loader-container {
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+  opacity: 1;
+  transition: all 500ms;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.rotatingLoader {
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  border-top: 4px dashed #4D77FF;
+  animation: round 700ms linear infinite;
+}
+
+@keyframes round {
+  from {
+      rotate: 0deg;
+  }
+  to {
+      rotate: 360deg;
+  }
+}
