@@ -11,7 +11,6 @@ const Faq = () => {
     setSelected(i)
   }
 
-
   return (
     <div className='flex justify-center flex-col items-center'>      
       <div className="z-10 font-bold txt-main mt-[10rem] mobile:text-[40px] lg:text-[64px] flex mobile:flex-col mobile:items-center lg:flex-row">
@@ -32,18 +31,20 @@ const Faq = () => {
               </div>
             </div>
 
-            {//Accordian here -------------------------------
+            {//!Accordian here -------------------------------
             }
           {data.map((item, i) => (
-              <div className='mobile:px-4 lg:px-8 '>     
-                <div id='blueborder' onClick={() => toggle(i)} 
-                className='flex w-[100%] justify-between txt-light mobile:text-[25px] lg:text-[30px] mobile:p-2 lg:p-6 cursor-pointer'>  
-                  <h1 className='z-10'>{item.question}</h1>
-                  <span>{selected === i ? '-' : '+'}</span>
+                <div className='mobile:px-4 lg:px-8 '>     
+                  <div id='blueborder' onClick={() => toggle(i)} 
+                  className='flex w-[100%] justify-between txt-light mobile:text-[25px] lg:text-[30px] mobile:p-2 lg:p-6 cursor-pointer'>  
+                    <h1 className='z-10'>{item.question}</h1>
+                    <span>{selected === i ? '-' : '+'}</span>
+                  </div>
+                  <div id='blueborder2' className={selected === i ? 'content show' : 'content'}>{item.answer}</div>
                 </div>
-                <div id='blueborder2' className={selected === i ? 'content show' : 'content'}>{item.answer}</div>
-              </div>
-          ))}
+              )
+            )
+          }
 
         </div>
       </div>
@@ -65,7 +66,5 @@ const data = [
     answer : 'If your beliefs , thoughts , feelings or behaviours have a significant impact on your ability to function in what might be considered a normal or ordinary way, it would be important to seek help. You can take our free mental health test survey and find out. click here!'
   }
 ]
-
-
 
 export default Faq
