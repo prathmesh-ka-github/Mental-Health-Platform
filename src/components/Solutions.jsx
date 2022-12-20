@@ -17,7 +17,7 @@ const Solutions = () => {
                 </div>
             </div>
             <div className='flex w-[70%] flex-wrap justify-center'>
-                <div className='sol-hover txt-light rounded-2xl m-4 p-4 border-2 border-[#C2C2C2] text-[28px] font-[500]'>
+                <div className='sol-hover txt-light rounded-2xl m-4 border-2 border-[#C2C2C2] text-[28px] font-[500]'>
                         Depression
                 </div>
                 <div className='sol-hover txt-light rounded-2xl m-4 p-4 border-2 border-[#C2C2C2] text-[28px] font-[500]'>
