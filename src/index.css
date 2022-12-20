@@ -279,13 +279,16 @@ body {
   filter: brightness(100%);
   cursor: pointer;
   padding: 1rem;
+  margin: 1rem;
 }
 .sol-hover:hover {
   filter: brightness(0.8);
 }
 
-@media screen and (max-width: 200px) {
+@media screen and (max-width: 600px) {
   .sol-hover{
     padding: 10px;
+    margin: 10px;
+    font-size: 20px;
   }
 }
