@@ -224,6 +224,11 @@ body {
   transition: all 0.5s cubic-bezier(1,0,0.5,0);
   font-size: 25px;
 }
+@media screen and (max-width: 600px) {
+  .show {
+    font-size: 18px;
+  }
+}
 #blueborder {
   border: 1px solid #4D77FF;
   border-bottom: 0px;
@@ -276,13 +281,18 @@ body {
 
 /*--------------------------------------------------------Solution hover-------------------------------*/
 .sol-hover {
-  filter: brightness(100%);
+  filter: brightness(0.5);
   cursor: pointer;
   padding: 1rem;
   margin: 1rem;
+  border-radius: 30px;
+  border: 2px #c2c2c2 solid;
+  font-size: 28px;
+  font-weight: 500;
+  transition: filter 300ms;
 }
 .sol-hover:hover {
-  filter: brightness(0.8);
+  filter: brightness(0.9);
 }
 
 @media screen and (max-width: 600px) {
@@ -292,3 +302,4 @@ body {
     font-size: 20px;
   }
 }
+/* rounded-2xl border-2 border-[#C2C2C2] text-[28px] font-[500]*/
