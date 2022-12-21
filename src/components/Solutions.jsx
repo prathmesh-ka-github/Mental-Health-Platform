@@ -3,7 +3,7 @@ import React from 'react'
 const Solutions = () => {
     return (
         <div className='flex flex-col items-center'>
-            <div className='flex justify-center mb-[80px] mobile:mb-[40px] flex-col'>
+            <div className='flex justify-center lg:mb-[100px] mobile:mb-[40px] flex-col'>
                 <div className='flex flex-col'>
                     <div className="justify-center z-10 font-bold txt-main mt-[10rem] mobile:text-[40px] lg:text-[64px] flex mobile:flex-col mobile:items-center lg:flex-row">
                         Solution
@@ -17,28 +17,28 @@ const Solutions = () => {
                 </div>
             </div>
             <div className='flex w-[70%] flex-wrap justify-center'>
-                <div className='sol-hover txt-light rounded-2xl border-2 border-[#C2C2C2] text-[28px] font-[500]'>
+                <div className='sol-hover txt-light'>
                         Depression
                 </div>
-                <div className='sol-hover txt-light rounded-2xl border-2 border-[#C2C2C2] text-[28px] font-[500]'>
+                <div className='sol-hover txt-light '>
                         Anxiety
                 </div>
-                <div className='sol-hover txt-light rounded-2xl border-2 border-[#C2C2C2] text-[28px] font-[500]'>
+                <div className='sol-hover txt-light '>
                         Insomnia
                 </div>
-                <div className='sol-hover txt-light rounded-2xl border-2 border-[#C2C2C2] text-[28px] font-[500]'>
+                <div className='sol-hover txt-light '>
                         PTSD
                 </div>
-                <div className='sol-hover txt-light rounded-2xl border-2 border-[#C2C2C2] text-[28px] font-[500]'>
+                <div className='sol-hover txt-light '>
                         Bipolar Disorder
                 </div>
-                <div className='sol-hover txt-light rounded-2xl border-2 border-[#C2C2C2] text-[28px] font-[500]'>
+                <div className='sol-hover txt-light '>
                         Relationships
                 </div>
-                <div className='sol-hover txt-light rounded-2xl border-2 border-[#C2C2C2] text-[28px] font-[500]'>
+                <div className='sol-hover txt-light '>
                         Parasomnias
                 </div>
-                <div className='sol-hover txt-light rounded-2xl border-2 border-[#C2C2C2] text-[28px] font-[500]'>
+                <div className='sol-hover txt-light '>
                         Dementia
                 </div>
             </div>

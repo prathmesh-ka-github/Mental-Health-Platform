@@ -22,12 +22,19 @@ const Faq = () => {
 
             <div className='mobile:px-4 lg:px-8 '>     
               <div id='blueborder'
-                className='flex w-[100%] justify-between txt-light mobile:text-[25px] lg:text-[30px] mobile:p-2 lg:p-6 cursor-pointer'>  
+                className='flex w-[100%] justify-between txt-light mobile:text-[20px] lg:text-[30px] mobile:p-2 lg:p-6 cursor-pointer'>  
                 <h1>Q. What about my confidentiality?</h1>
                 <span>-</span>
               </div>
               <div id='blueborder2' className='content show'>
-                
+                Client confidentiality is the requirement that therapists, psychiatrists, psychologists, and most other mental health professionals protect their client’s privacy by not revealing the contents of therapy.
+                <br /><br />
+                >> WHAT IS CLIENT CONFIDENTIALITY?<br /><br />
+                Confidentiality includes not just the contents of therapy, but often the fact that a client is in therapy. For example, it is common that therapists will not acknowledge their clients if they run into them outside of therapy in an effort to protect client confidentiality. Other ways confidentiality is protected include:
+
+                Not leaving revealing information on voicemail or text.
+                Not acknowledging to outside parties that a client has an appointment.
+                Not discussing the contents of therapy with a third party without the explicit permission of the client.
               </div>
             </div>
 
@@ -36,7 +43,7 @@ const Faq = () => {
           {data.map((item, i) => (
                 <div className='mobile:px-4 lg:px-8 '>     
                   <div id='blueborder' onClick={() => toggle(i)} 
-                  className='flex w-[100%] justify-between txt-light mobile:text-[25px] lg:text-[30px] mobile:p-2 lg:p-6 cursor-pointer'>  
+                  className='flex w-[100%] justify-between txt-light mobile:text-[20px] lg:text-[30px] mobile:p-2 lg:p-6 cursor-pointer'>  
                     <h1 className='z-10'>{item.question}</h1>
                     <span>{selected === i ? '-' : '+'}</span>
                   </div>
