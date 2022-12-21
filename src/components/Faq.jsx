@@ -29,7 +29,7 @@ const Faq = () => {
               <div id='blueborder2' className='content show'>
                 Client confidentiality is the requirement that therapists, psychiatrists, psychologists, and most other mental health professionals protect their client’s privacy by not revealing the contents of therapy.
                 <br /><br />
-                >> WHAT IS CLIENT CONFIDENTIALITY?<br /><br />
+                》WHAT IS CLIENT CONFIDENTIALITY?<br /><br />
                 Confidentiality includes not just the contents of therapy, but often the fact that a client is in therapy. For example, it is common that therapists will not acknowledge their clients if they run into them outside of therapy in an effort to protect client confidentiality. Other ways confidentiality is protected include:
 
                 Not leaving revealing information on voicemail or text.

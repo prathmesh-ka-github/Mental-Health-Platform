@@ -5,7 +5,7 @@ const Solutions = () => {
         <div className='flex flex-col items-center'>
             <div className='flex justify-center lg:mb-[100px] mobile:mb-[40px] flex-col'>
                 <div className='flex flex-col'>
-                    <div className="justify-center z-10 font-bold txt-main mt-[10rem] mobile:text-[40px] lg:text-[64px] flex mobile:flex-col mobile:items-center lg:flex-row">
+                    <div className="justify-center z-10 font-bold txt-main mt-[13rem] mobile:text-[40px] lg:text-[64px] flex mobile:flex-col mobile:items-center lg:flex-row">
                         Solution
                         <div className="txt-light flex">&nbsp;to all your</div>
                         <div className="txt-light flex">&nbsp; problems</div>

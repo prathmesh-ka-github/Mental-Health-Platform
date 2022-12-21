@@ -281,18 +281,18 @@ body {
 
 /*--------------------------------------------------------Solution hover-------------------------------*/
 .sol-hover {
-  filter: brightness(0.5);
   cursor: pointer;
   padding: 1rem;
   margin: 1rem;
+  filter: brightness(0.4);
   border-radius: 30px;
-  border: 2px #c2c2c2 solid;
+  border: 1px #c2c2c2 solid;
   font-size: 28px;
   font-weight: 500;
-  transition: filter 300ms;
+  transition: filter  300ms;
 }
 .sol-hover:hover {
-  filter: brightness(0.9);
+  filter: brightness(1);
 }
 
 @media screen and (max-width: 600px) {
