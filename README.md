@@ -10,3 +10,5 @@ The demo for the frontend has been hosted on netlify for the time being.
 https://idyllic-kangaroo-4a3829.netlify.app
 <br><br>
 This is a College project on which 5 undergrad students are working. A place for people who can talk freely about their mental health issues and has no need to be afraid of being judged and rejected by anyone.
+<br><br>
+Visit the demo link to checkout the website above!
