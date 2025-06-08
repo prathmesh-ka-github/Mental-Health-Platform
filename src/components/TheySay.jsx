@@ -66,7 +66,7 @@ const TheySay = () => {
     };
 
     useEffect(() => {
-        const interval = setInterval(rotateRight, 6000);
+        const interval = setInterval(rotateRight, 10000);
         return () => clearInterval(interval);
     }, []);
 
@@ -81,7 +81,7 @@ const TheySay = () => {
         return () => container.removeEventListener('wheel', handleWheel);
     }, []);
     return (
-        <div className='flex flex-col items-center py-60'>
+        <div className='flex flex-col items-center py-60 z-10 relative'>
             <div className='lg:text-[50px] font-bold txt-light'>
                 They <span className='txt-main'>Say.</span>
             </div>
@@ -89,11 +89,11 @@ const TheySay = () => {
                 <div>Some of our client testimonials</div>
             </div>
             <div className="gallery">
-                <div className="gallery-container mt-8" id="gallery">
+                <div className="gallery-container mt-12" id="gallery">
                     {positions.map((pos, idx) => (
                         <div key={idx} className={`gallery-card item${pos}`}>
                             {/* <h1>{names[idx]}</h1> */}
-                            <div className="main-title font-medium lg:text-[30px] my-2">"{data[idx].heading}"</div>
+                            <div className="main-title lg:text-[30px] my-2 italic">"{data[idx].heading}"</div>
                             <div className="desc my-2 lg:text-[15px]">{data[idx].desc}</div>
                             <div className="person flex flex-row m-2 items-start w-[100%]">
                                 <div className="pfp bg-red-500 w-14 h-14 rounded-full"></div>
@@ -110,8 +110,8 @@ const TheySay = () => {
                     ))}
                 </div>
                 <div className="controls">
-                    <button onClick={rotateLeft}>&lt;</button>
-                    <button onClick={rotateRight}>&gt;</button>
+                    <button className='txt-light' onClick={rotateLeft}>&lt;</button>
+                    <button className='txt-light' onClick={rotateRight}>&gt;</button>
                 </div>
             </div>
         </div>
