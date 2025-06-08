@@ -306,59 +306,60 @@ body {
 /*------------------------------------------------Gallery for TheySay-----------------------------------*/
 .gallery {
   display: flex;
-  width: 100%;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.gallery-container {
+  position: relative;
+  height: 300px;
+  width: 600px;
+}
+.gallery-card {
+  position: absolute;
+  height: 300px;
+  width: 600px;
+  border-radius: 20px;
+  transition: all ease 800ms;
+  background-color: white;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+  justify-content: center;
+  padding: 40px;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
-.gallery-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 450px;
-  width: 450px;
-}
-.gallery-item  {
-  position: absolute;
-  border-radius: 10px;
-  transition: all ease-in-out 0.3s;
-}
-.gallery-item-1 {
-  background-color: red;
-  opacity: 0.4;
+.item1 {
   transform: translateX(-140%);
-  height: 200px;
-  width: 300px;
+}
+.item2,
+.item4 {
+  scale: 0.8;
   z-index: 1;
+  filter: blur(2px);
 }
-.gallery-item-2, .gallery-item-4 {
-  height: 250px;
-  width: 350px;
-  opacity: 0.8;
-  z-index: 2;
+.item1,
+.item5 {
+  scale: 0.6;
+  z-index: 0;
+  filter: blur(3px);
 }
-.gallery-item-2 {
-  transform: translateX(-80%);
-  background-color: blue;
+.item2 {
+  transform: translateX(-60%);
 }
-.gallery-item-3 {
-  height: 350px;
-  width: 450px;
-  background-color: green;
-  opacity: 1;
+.item3 {
   z-index: 3;
 }
-.gallery-item-4{
-  background-color: yellow;
-  transform: translateX(80%);
+.item4 {
+  transform: translateX(60%);
 }
-.gallery-item-5 {
-  background-color: blueviolet;
-  z-index: 1;
-  opacity: 0.4;
+.item5 {
   transform: translateX(140%);
-  height: 200px;
-  width: 300px;
+}
+.controls button{
+  font-size: 40px;
+  font-weight: 300;
+  margin: 10px 40px;
 }
