@@ -3,7 +3,7 @@ import React from 'react'
 const How = () => {
   return (
     <div className='flex justify-center flex-col items-center py-60'>
-        <div className="justify-center text-center font-bold txt-light mobile:text-[40px] lg:text-[64px] flex mobile:flex-col lg:flex-row">
+        <div className="justify-center text-center font-bold txt-light mobile:text-[40px] lg:text-[50px] flex mobile:flex-col lg:flex-row">
           How does it <span className="txt-main">&nbsp;Work ?</span>
         </div>
         <div className="z-10 flex lg:flex-row mobile:flex-col justify-center items-start mt-20">

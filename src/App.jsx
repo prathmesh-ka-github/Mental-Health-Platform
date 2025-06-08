@@ -7,6 +7,7 @@ import How from './components/How';
 import Solutions from './components/Solutions';
 import Info from './components/Info';
 import Top from './components/Top';
+import TheySay from './components/TheySay';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <How/>
       <Faq/>
       <Solutions/>
+      <TheySay/>
       <BackGradients/>
       <div id="test-space" className="h-[5000px]"></div>
     </div>

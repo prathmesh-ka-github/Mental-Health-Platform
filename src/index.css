@@ -10,7 +10,7 @@ body {
 :root {
   --primary-color: #ffffff;
   --secondary-color: #000000;
-  --ternary-color-1: #a4a3a3;
+  --ternary-color-1: #939393;
   --ternary-color-2: #747474;
   --main-color: #4D77FF;
 
@@ -18,7 +18,7 @@ body {
   --opacity-secondary: 1;
   
   --back-brightness: brightness(1);
-  --back-blur: blur(120px);
+  --back-blur: blur(100px);
 }
 
 .opa-dark {
@@ -302,3 +302,63 @@ body {
   }
 }
 /* rounded-2xl border-2 border-[#C2C2C2] text-[28px] font-[500]*/
+
+/*------------------------------------------------Gallery for TheySay-----------------------------------*/
+.gallery {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.gallery-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 450px;
+}
+.gallery-item  {
+  position: absolute;
+  border-radius: 10px;
+  transition: all ease-in-out 0.3s;
+}
+.gallery-item-1 {
+  background-color: red;
+  opacity: 0.4;
+  transform: translateX(-140%);
+  height: 200px;
+  width: 300px;
+  z-index: 1;
+}
+.gallery-item-2, .gallery-item-4 {
+  height: 250px;
+  width: 350px;
+  opacity: 0.8;
+  z-index: 2;
+}
+.gallery-item-2 {
+  transform: translateX(-80%);
+  background-color: blue;
+}
+.gallery-item-3 {
+  height: 350px;
+  width: 450px;
+  background-color: green;
+  opacity: 1;
+  z-index: 3;
+}
+.gallery-item-4{
+  background-color: yellow;
+  transform: translateX(80%);
+}
+.gallery-item-5 {
+  background-color: blueviolet;
+  z-index: 1;
+  opacity: 0.4;
+  transform: translateX(140%);
+  height: 200px;
+  width: 300px;
+}
