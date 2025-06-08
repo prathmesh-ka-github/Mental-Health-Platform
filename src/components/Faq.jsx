@@ -12,8 +12,8 @@ const Faq = () => {
   }
 
   return (
-    <div className='flex justify-center flex-col items-center'>      
-      <div className="z-10 font-bold txt-main mt-[10rem] mobile:text-[40px] lg:text-[64px] flex mobile:flex-col mobile:items-center lg:flex-row">
+    <div className='flex justify-center flex-col items-center my-40'>      
+      <div className="z-10 font-bold txt-main mobile:text-[40px] lg:text-[64px] flex mobile:flex-col mobile:items-center lg:flex-row">
           Frequently Asked
           <span className="txt-light">&nbsp;Questions</span>
       </div>
@@ -22,11 +22,11 @@ const Faq = () => {
 
             <div className='mobile:px-4 lg:px-8 '>     
               <div id='blueborder'
-                className='flex w-[100%] justify-between txt-light mobile:text-[20px] lg:text-[30px] mobile:p-2 lg:p-6 cursor-pointer'>  
+                className='flex w-[100%] justify-between txt-light mobile:text-[20px] lg:text-[25px] mobile:p-2 lg:p-6 cursor-pointer'>  
                 <h1>Q. What about my confidentiality?</h1>
                 <span>-</span>
               </div>
-              <div id='blueborder2' className='content show'>
+              <div id='blueborder2' className='content show lg:text-[20px]'>
                 Client confidentiality is the requirement that therapists, psychiatrists, psychologists, and most other mental health professionals protect their client’s privacy by not revealing the contents of therapy.
                 <br /><br />
                 》WHAT IS CLIENT CONFIDENTIALITY?<br /><br />
@@ -43,7 +43,7 @@ const Faq = () => {
           {data.map((item, i) => (
                 <div className='mobile:px-4 lg:px-8 '>     
                   <div id='blueborder' onClick={() => toggle(i)} 
-                  className='flex w-[100%] justify-between txt-light mobile:text-[20px] lg:text-[30px] mobile:p-2 lg:p-6 cursor-pointer'>  
+                  className='flex w-[100%] justify-between txt-light mobile:text-[20px] lg:text-[25px] mobile:p-2 lg:p-6 cursor-pointer'>  
                     <h1 className='z-10'>{item.question}</h1>
                     <span>{selected === i ? '-' : '+'}</span>
                   </div>

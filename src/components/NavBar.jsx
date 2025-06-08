@@ -2,18 +2,18 @@ import React from 'react'
 
 const NavBar = () => {
   return (
-    <div className="z-20 mobile:px-10 lg:px-[10vw] lg:text-[26px] lg:h-[80px] mobile:h-[70px] w-[100vw] flex text-5xl items-center justify-between font-normal shadow-md fixed nav-light txt-light">
-      <div className="cursor-pointer mobile:w-10 lg:w-[3vmax] md:w-10 ">
+    <div className="z-20 mobile:px-10 lg:px-[10vw] lg:text-[20px] lg:h-[65px] mobile:h-[70px] w-[100vw] flex items-center justify-between font-normal shadow-md fixed nav-light txt-light">
+      <div className="cursor-pointer mobile:w-10 lg:w-[2.5vmax] md:w-10 ">
         <img id="logo" src="./assets/icons8-mental-health-64 (1).png" alt="logos" />
       </div>
-      <ul className="lg:justify-around md:justify-between items-center sm:flex hidden">
-        <li className="list-none inline-block mx-4 hover:border-b-4 border-blue-600 cursor-pointer p-2 transition-all">Home</li>
-        <li className="list-none inline-block mx-4 hover:border-b-4 border-blue-600 cursor-pointer p-2 transition-all">Help</li>
-        <li className="list-none inline-block mx-4 hover:border-b-4 border-blue-600 cursor-pointer p-2 transition-all">About Us</li>
-        <li className="list-none inline-block mx-4 hover:border-b-4 border-blue-600 cursor-pointer p-2 transition-all">Contact Us</li>
-        <li className="list-none hover:border-b-4 border-blue-600 cursor-pointer transition-all">
+      <ul className="lg:justify-around w-[60%] md:justify-between items-center sm:flex hidden">
+        <li className="list-none inline-block border-b-4 border-opacity-0 hover:border-opacity-100 border-blue-600 cursor-pointer p-1 transition-all ">Home</li>
+        <li className="list-none inline-block border-b-4 border-opacity-0 hover:border-opacity-100 border-blue-600 cursor-pointer p-1 transition-all">Help</li>
+        <li className="list-none inline-block border-b-4 border-opacity-0 hover:border-opacity-100 border-blue-600 cursor-pointer p-1 transition-all">About Us</li>
+        <li className="list-none inline-block border-b-4 border-opacity-0 hover:border-opacity-100 border-blue-600 cursor-pointer p-1 transition-all">Contact Us</li>
+        <li className="list-none mx-4 my-2 py-1 border-b-4 border-opacity-0 hover:border-opacity-100 border-blue-600 cursor-pointer transition-all">
           <button onClick={window['theme']} className="text-center justify-center flex">
-            <img className="w-[50px]" src="./assets/icons8-sun-100.png" alt="sun" id="icon" />
+            <img className="w-[35px]" src="./assets/icons8-sun-100.png" alt="sun" id="icon" />
           </button>
         </li>
       </ul>

@@ -18,7 +18,7 @@ body {
   --opacity-secondary: 1;
   
   --back-brightness: brightness(1);
-  --back-blur: blur(64px);
+  --back-blur: blur(120px);
 }
 
 .opa-dark {
@@ -81,23 +81,23 @@ body {
   --opacity-primary: 0.5;
 
   --back-brightness: brightness(0.4);
-  --back-blur: blur(64px);
+  --back-blur: blur(180px);
 }
 
 /*-----------------------------------------------gradients for the backdrop---------------------------------------------------*/
 .gradient__blue {
-  background: linear-gradient(45deg, #b9c9ff 0%, #4964ff 100%);
-  filter: blur(120px);
+  background: linear-gradient(45deg, #b9c9ff 0%, #2a4aff 60%);
+  filter: var(--back-blur);
 }
 
 .gradient__blue2 {
-  background: linear-gradient(45deg, #b9c9ff 0%, #4964ff 100%);
-  filter: blur(120px);
+  background: linear-gradient(45deg, #b9c9ff 0%, #2840c7 60%);
+  filter: var(--back-blur);
 }
 
 .gradient__pink {
-  background: linear-gradient(10deg, #ffb9f6 0%, #fd74eb 100%);
-  filter: blur(140px);
+  background: linear-gradient(10deg, #ffa3f3 0%, #ff2de3 60%);
+  filter: var(--back-blur);
 }
 
 /*------------------------------------------------PULSING EFFECTS-------------------------------------------------------------*/
@@ -130,7 +130,6 @@ body {
 /*---------------------------------------------------TYPEWRITER EFFECT-------------------------------------------------------*/
 .type {
   position: relative;
-
 }
 
 .type::before,
@@ -222,7 +221,7 @@ body {
   height: auto;
   max-height: 99999px;
   transition: all 0.5s cubic-bezier(1,0,0.5,0);
-  font-size: 25px;
+  font-size: 20px;
 }
 @media screen and (max-width: 600px) {
   .show {
@@ -286,8 +285,8 @@ body {
   margin: 1rem;
   filter: brightness(0.4);
   border-radius: 30px;
-  border: 1px #c2c2c2 solid;
-  font-size: 28px;
+  border: 1px #a3a3a3 solid;
+  font-size: 20px;
   font-weight: 500;
   transition: filter  300ms;
 }
