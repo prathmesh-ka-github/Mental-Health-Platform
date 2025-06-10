@@ -8,6 +8,7 @@ import Solutions from './components/Solutions';
 import Info from './components/Info';
 import Top from './components/Top';
 import TheySay from './components/TheySay';
+import WorkWithUs from './components/WorkWithUs';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Faq/>
       <Solutions/>
       <TheySay/>
+      <WorkWithUs/>
       <BackGradients/>
       <div id="test-space" className="h-[5000px]"></div>
     </div>

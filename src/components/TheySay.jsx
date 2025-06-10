@@ -1,7 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
+// import 'swiper/css';
 
 import men1 from '../../public/assets/men1.jpg'
 import men2 from '../../public/assets/men2.jpg'
