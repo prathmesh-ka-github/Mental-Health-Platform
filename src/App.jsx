@@ -10,6 +10,7 @@ import Top from './components/Top';
 import TheySay from './components/TheySay';
 import WorkWithUs from './components/WorkWithUs';
 import Pricing from './components/Pricing';
+import Confidentiality from './components/Confidentiality';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <NavBar/>
       <Home/>
       <How/>
+      <Confidentiality/>
       <Faq/>
       <Solutions/>
       <TheySay/>
