@@ -2,7 +2,7 @@ import React from 'react'
 
 const NavBar = () => {
     return (
-        <div className="z-20 mobile:px-10 lg:px-[10vw] lg:text-[18px] lg:h-[65px] mobile:h-[70px] w-[100vw] flex items-center justify-between font-normal shadow-md fixed nav-light txt-light">
+        <div className="z-50 mobile:px-10 lg:px-[10vw] lg:text-[18px] lg:h-[65px] mobile:h-[70px] w-[100vw] flex items-center justify-between font-normal shadow-md fixed nav-light txt-light">
             <div className="cursor-pointer mobile:w-10 lg:w-[2.5vmax] md:w-10 ">
                 <img id="logo" src="./assets/icons8-mental-health-64 (1).png" alt="logos" />
             </div>
@@ -17,8 +17,8 @@ const NavBar = () => {
                     </svg>
                 </li>
             </ul>
-            <div className="absolute sm:flex hidden lg:block right-6 h-[100%] content-center p-2 border-b-4 border-opacity-0 hover:border-opacity-100 border-blue-600 cursor-pointer transition-all">
-                <button onClick={window['theme']} className="text-center justify-center flex">
+            <div onClick={window['theme']} className="absolute sm:flex hidden lg:block right-6 h-[100%] content-center p-2 border-b-4 border-opacity-0 hover:border-opacity-100 border-blue-600 cursor-pointer transition-all">
+                <button className="text-center justify-center flex">
                     <img className="w-[30px]" src="./assets/icons8-sun-100.png" alt="sun" id="icon" />
                 </button>
             </div>

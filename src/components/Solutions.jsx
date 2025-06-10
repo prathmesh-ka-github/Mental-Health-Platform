@@ -50,6 +50,9 @@ const Solutions = () => {
                 <div className='sol-hover txt-light '>
                     Dementia
                 </div>
+                <div className='sol-hover txt-light '>
+                    And more...
+                </div>
             </div>
         </div>
     )

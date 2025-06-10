@@ -6,9 +6,11 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
 }
+
 .usersvg {
   stroke: var(--secondary-color);
 }
+
 /*------------------------------------------------------------CSS VARIABLES FOR DARK MODE-------------------------------------------------------*/
 :root {
   --primary-color: #ffffff;
@@ -19,7 +21,7 @@ body {
 
   --opacity-primary: 1;
   --opacity-secondary: 1;
-  
+
   --back-brightness: brightness(1);
   --back-blur: blur(100px);
 }
@@ -66,13 +68,13 @@ body {
 }
 
 .nav-dark {
-  backdrop-filter: var(--back-blur) 
-  var(--back-brightness);
+  backdrop-filter: var(--back-blur) var(--back-brightness);
 }
+
 .nav-light {
-  backdrop-filter: var(--back-blur)
-  var(--back-brightness);
+  backdrop-filter: var(--back-blur) var(--back-brightness);
 }
+
 /*-----------------------------------------------------DARK THEME--------------------------------------------------*/
 .dark-theme {
   --secondary-color: #ffffff;
@@ -172,6 +174,7 @@ body {
     background: transparent;
   }
 }
+
 /*-----------------------------------------------------------BACK TO THE TOP-------------------------------------------------------------*/
 /* CSS */
 #btn-back-to-top {
@@ -207,35 +210,40 @@ body {
 /*-----------------------------------------------------------ACCORDION-----------------------------------------------------------------*/
 
 .transition {
-  transition: all 0.5s cubic-bezier(0,1,0,1);
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
 }
+
 .content {
   color: var(--secondary-color);
   max-height: 0;
   overflow: hidden;
-  transition: all 0.5s cubic-bezier(0,0.5,0,1);
+  transition: all 0.5s cubic-bezier(0, 0.5, 0, 1);
   padding: 0px;
-  font-size:0px;
+  font-size: 0px;
   z-index: 20;
 }
+
 .show {
   z-index: 20;
   padding: 20px;
   height: auto;
   max-height: 99999px;
-  transition: all 0.5s cubic-bezier(1,0,0.5,0);
+  transition: all 0.5s cubic-bezier(1, 0, 0.5, 0);
   font-size: 20px;
 }
+
 @media screen and (max-width: 600px) {
   .show {
     font-size: 18px;
   }
 }
+
 #blueborder {
   border: 1px solid #4D77FF;
   border-bottom: 0px;
   border-radius: 10px 10px 0px 0px;
 }
+
 #blueborder2 {
   border: 1px solid #4D77FF;
   border-bottom: 0px;
@@ -274,10 +282,11 @@ body {
 
 @keyframes round {
   from {
-      rotate: 0deg;
+    rotate: 0deg;
   }
+
   to {
-      rotate: 360deg;
+    rotate: 360deg;
   }
 }
 
@@ -291,19 +300,21 @@ body {
   border: 1px #a3a3a3 solid;
   font-size: 20px;
   font-weight: 500;
-  transition: filter  300ms;
+  transition: filter 300ms;
 }
+
 .sol-hover:hover {
   filter: brightness(1);
 }
 
 @media screen and (max-width: 600px) {
-  .sol-hover{
+  .sol-hover {
     padding: 10px;
     margin: 10px;
     font-size: 20px;
   }
 }
+
 /* rounded-2xl border-2 border-[#C2C2C2] text-[28px] font-[500]*/
 
 /*------------------------------------------------Gallery for TheySay-----------------------------------*/
@@ -314,11 +325,13 @@ body {
   align-items: center;
   width: 100%;
 }
+
 .gallery-container {
   position: relative;
   height: 300px;
   width: 600px;
 }
+
 .gallery-card {
   position: absolute;
   height: 300px;
@@ -331,38 +344,66 @@ body {
   align-items: center;
   justify-content: center;
   padding: 40px;
-  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .item1 {
   transform: translateX(-110%);
 }
+
 .item2,
 .item4 {
   scale: 0.8;
   z-index: 1;
   filter: blur(2px);
 }
+
 .item1,
 .item5 {
   scale: 0.6;
   z-index: 0;
   filter: blur(3px);
 }
+
 .item2 {
   transform: translateX(-50%);
 }
+
 .item3 {
   z-index: 3;
 }
+
 .item4 {
   transform: translateX(50%);
 }
+
 .item5 {
   transform: translateX(110%);
 }
-.controls button{
+
+.controls button {
   font-size: 40px;
   font-weight: 300;
   margin: 10px 40px;
+}
+
+/* ------------------------------------Bounce animation for pricing------------------------------------ */
+.ani-bounce {
+  animation: bounce 4s ease-in-out infinite ;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  15% {
+    transform: translateY(-8px);
+    
+  }
+  20% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }

@@ -2,7 +2,7 @@ import React from 'react'
 
 const WorkWithUs = () => {
     return (
-        <div className='flex flex-col items-center my-40 z-10 relative'>
+        <div className='flex flex-col items-center py-48 z-10 relative'>
             <div className='lg:text-[50px] font-bold txt-light'>
                 <span className='txt-main'>Work</span> with us
             </div>
