@@ -9,6 +9,8 @@ using REACT JS as a frontend framework and Tailwind CSS for styling with it's pr
 The demo for the frontend has been hosted on Vercel for the time being. Backend development is in process. 
 
 https://mental-health-platform-one.vercel.app
+
+![Screenshot](<Screenshot.png>)
 <br><br>
 This is a College project on which 5 undergrad students are working. A place for people who can talk freely about their mental health issues and has no need to be afraid of being judged and rejected by anyone.
 <br><br>
