@@ -17,3 +17,8 @@ This is a College project on which 5 undergrad students are working. A place for
 Visit the demo link to checkout the website above!
 
 ## TODOs -
+1. Complete the footer.
+1. Complete the login/register page.
+1. Add a register form for therapists.
+1. Add some more FAQs and elaborate the existing faq answers.
+1.
