@@ -1,24 +1,24 @@
-# Mental health platform (This app is currently in the rudimentary stage of development).
-<br>
-Now this project uses vite to build, run and develop this webapp!
-<br><br>
-A platform for mental heath help which is created using REACT JS and TailwindCSS
-<br><br>
-using REACT JS as a frontend framework and Tailwind CSS for styling with it's prebuild utility classes and there is no backend and database right now, but the backend team will add the code soon with a new repository.
-<br><br>
-The demo for the frontend has been hosted on Vercel for the time being. Backend development is in process. 
+<h1 style="text-align:center">Healio 😇</h1>
 
-https://mental-health-platform-one.vercel.app
+### Connecting minds to peace, one click at a time.
+
+Healio is a holistic mental health app offering real-time chat with licensed therapists. A digital platform focused on stress relief, therapy sessions, and emotional well-being—accessible anytime, anywhere to help users feel better, faster.
+
+### https://mental-health-platform-one.vercel.app
+
+## Made with ReactJS and TailwindCSS, powered by VITE⚡
+
+
+Using ReactJS as a frontend JS framework and Tailwind CSS for styling with it's prebuild utility classes. There is no backend and database yet but it will be built soon with ExpressJS and MongoDB.
 
 ![Screenshot](<Screenshot.png>)
-<br><br>
-This is a College project on which 5 undergrad students are working. A place for people who can talk freely about their mental health issues and has no need to be afraid of being judged and rejected by anyone.
-<br><br>
-Visit the demo link to checkout the website above!
+
+This is a College project with a team of 3 undergrad students and 2 researchers. 
 
 ## TODOs -
 1. Complete the footer.
 1. Complete the login/register page.
 1. Add a register form for therapists.
 1. Add some more FAQs and elaborate the existing faq answers.
-1.
+1. Reconfigure the navbar.
+1. Update the project name in the app and repo.
