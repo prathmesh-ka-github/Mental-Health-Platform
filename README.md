@@ -15,6 +15,20 @@ Using ReactJS as a frontend JS framework and Tailwind CSS for styling with it's 
 
 This is a College project with a team of 3 undergrad students and 2 researchers. 
 
+## Run it on your machine!
+
+Download, unzip and open the folder in your text editor.
+
+1. Install the dependencies -
+```
+>> npm install
+```
+2. Run the development environment -
+```
+>> npm run dev
+```
+3. Open localhost in your brower and Done!
+
 ## TODOs -
 1. Complete the footer.
 1. Complete the login/register page.
