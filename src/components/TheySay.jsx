@@ -2,13 +2,13 @@ import React from 'react'
 import { useEffect, useState } from 'react';
 // import 'swiper/css';
 
-import men1 from '../../public/assets/men1.jpg'
-import men2 from '../../public/assets/men2.jpg'
-import men3 from '../../public/assets/men3.jpg'
-import woman1 from '../../public/assets/woman1.jpg'
-import woman2 from '../../public/assets/woman2.jpg'
-import woman3 from '../../public/assets/woman3.jpg'
-import woman4 from '../../public/assets/woman4.jpg'
+import men1 from '/assets/men1.jpg'
+import men2 from '/assets/men2.jpg'
+import men3 from '/assets/men3.jpg'
+import woman1 from '/assets/woman1.jpg'
+import woman2 from '/assets/woman2.jpg'
+import woman3 from '/assets/woman3.jpg'
+import woman4 from '/assets/woman4.jpg'
 
 const names = ['Abhishek', 'Prathmesh', 'Atharva', 'Sai Satwik', 'Rishikesh'];
 const data = [
