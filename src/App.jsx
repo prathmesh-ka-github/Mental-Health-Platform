@@ -11,6 +11,7 @@ import TheySay from './components/TheySay';
 import WorkWithUs from './components/WorkWithUs';
 import Pricing from './components/Pricing';
 import Confidentiality from './components/Confidentiality';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Pricing/>
       <WorkWithUs/>
       <BackGradients/>
+      <Footer/>
       {/* <div id="test-space" className="h-[5000px]"></div> */}
     </div>
   )
